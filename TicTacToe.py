@@ -2,7 +2,7 @@
 
 '''
 
-** My personal version of one of the most popular first python project: tictactoe. **
+** My personal version of one of the most popular first python projects: tictactoe. **
 
 '''
 
