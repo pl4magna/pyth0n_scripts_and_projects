@@ -2,12 +2,6 @@
 
 ### The notebook shows RMSD, rmsf and distance matrices of two different structures in MD simulations. These are the human Retinol Binding Protein 4 (PDB: 5NU7) and his mutated form G75D obtained in silico. Down below it shows the geometric distances of four simulations: 1 wild-type and 3 different mutated
 
-```{toggle}
-import os
-os.chdir('/home/redox/Scrivania/REDOX/Tirocinio/G75D_olo_1')
-```
-
-
 ```python
 from Bio.PDB import *
 import MDAnalysis as mda
@@ -116,10 +110,6 @@ plt.show();
 
 
 RMSD plotting for the wild-type RBP
-
-```{toggle}
-os.chdir('/home/redox/Scrivania/REDOX/Tirocinio/RBP_wt/')
-```
 
 
 ```python
@@ -263,10 +253,6 @@ plt.legend();
 
 
 We import a table reporting rmsf values of the wt protein obtained previously from a GROMACS utility and plot against the mutated
-
-```{toggle}
-os.chdir('/home/redox/Scrivania/REDOX/Tirocinio/RBP_wt/Analysis/PRIMA')
-```
 
 
 ```python
@@ -514,10 +500,6 @@ cbar2.ax.set_ylabel('Distance (Angstrom)');
 
 We repeat the steps of above but using the wt protein
 
-```{toggle}
-os.chdir('/home/redox/Scrivania/REDOX/Tirocinio/RBP_wt/')
-```
-
 
 ```python
 u = mda.Universe('5nu7_RTOL_min.gro', '5nu7_RTOL_200ns_whole.xtc')
@@ -551,10 +533,6 @@ cbar2.ax.set_ylabel('Distance (Angstrom)');
 By comparing the two matrix you can notice a sligth variation in the distance between the atoms through the entire trajectory . This indicates an higher fluctuation of mutated protein's atoms confirming the results of RMSD and RMSF.
 
 ## Geometric similarity
-
-```{toggle}
-os.chdir('/home/redox/Scrivania/REDOX/Tirocinio/')
-```
 
 
 ```python
